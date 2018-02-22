@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header
+{
+	background-color:#cfc9e8;
+}
+.jumbotron
+{
+	background-color:beige;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.live_now
+{
+	font-size:30px;
+}

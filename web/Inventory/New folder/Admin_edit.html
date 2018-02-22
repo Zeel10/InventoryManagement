@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Admin_edit</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="affix_scrollspy.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	
+	#update,#Approve,#Add_section,#Remove,#Remove_Players,#Remove_schedule,#Update_Results,#Update_Schedule
+	{
+		height: auto;
+		margin: 20px;
+	}
+	.row
+	{
+		height: 5px;
+	}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15" style="position: relative;">
+	<div class="head" style="width:100%; position: fixed;background-color: orangered;margin-bottom: 100px;top: 0px; z-index:10;"  >
+		<h1>Sport Management</h1>
+	</div>
+<div class="container-fluid" style="background-color: #2196F3; color: #FFF; height: 220px;">
+<!--Update Recents-->
+	<h1>Updates::</h1>
+	<h3>There is no update Right now </h3>
+	<p>Hey, give me some update to make it work.</p>
+	<p>There is something but nothing.</p>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-3" id="myScrollspy">
+				<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+			<!--Side bar--->
+				 <li><a href="#Approve">Approve</a></li>
+			     <li><a href="#Add_section">AddSection</a></li>
+                 <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Update<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                 <li>
+                   <a href="#Update_Schedule">Schedule</a>
+                 </li>
+                 <li>
+                 <a href="#Update_Results">Result</a>
+                 </li>
+					</ul></li>
+                 <li class="dropdown">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Remove<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li>
+                   <a href="#Remove_Players">Players</a>
+                 </li>
+                 <li>
+                 <a href="#Remove_Schedule">Schedule</a>
+                 </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	     <div class="col-sm-9 col-xs-9" style="top: 80px;">
+     <!--Approve-Section-->
+            <div id="Approve">    
+                <h1>Approve</h1>
+                  <p>Select team from following to approve for matches:</p>
+           <form>
+        	<table id="table_out" style="width: 80%;">
+        	 <tr>
+			  <th width="40%">Team Name</th>
+       	      <th>Type(A/B/C)</th>
+       	      <th>Game</th>
+        	  <th width="60%">Approve</th>
+             </tr>
+            <tr>
+				<td>Team name</td>
+       	        <td>A</td>
+       	        <td>Badminton</td>
+        	    <td>
+        	     <div class="radio">
+    	  			<div class="radio radio-info radio-inline">
+        				 <input type="radio" id="Radio_yes" value="yes" name="Radio" checked>yes
+        			 </div>	
+         			<div class="radio radio-info radio-inline">
+         				 <input type="radio" id="Radio_no" value="no" name="Radio">no 
+   			 		</div>
+			     </div>
+         	   </td>
+		    </tr>
+		   </table>
+     </form>
+     </div>
+     
+     <!--Add-section-->
+      <div id="Add_section"> 
+          <h1>Add Section</h1>
+        <div class="add_game">
+          <h2>Add Game</h2>
+         <div class="input-group"> <!--input_group-name used everywhere-->
+            <label for="input_game_name"><h3>Enter Game</h3></label>
+        		<input type="text" id="input_game_name">
+				<div class="form-group">
+  				  <label for="sel1">Select Game Type:</label>
+  				  <select class="form-control" id="sel1">
+                    <option>Indoor</option>
+                    <option>Outdoor</option>
+                 </select>
+			   </div> 
+        	</div>
+        </div>
+      </div>
+         <!-- Update-->     
+      <div id="Update">
+       
+             <h1>Update</h1>
+      	     <div id="Update_Schedule">
+      	     <!-- Schedule-update-->  
+      			 <h2>Schedule</h2>
+    	        <div class="row" style="height: 100px" >
+    	         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="height: 100px" >
+    	        	 <select class="form-control">
+     	     		<option value="">Select Match</option>
+     	     		<option value="LM1">Match-1</option>
+     	     		<option value="LM2">Match-2</option>
+     	     		<option value="SM2">Semi-final-2</option>
+     	     		<option value="FN">Final</option>
+					</select>
+				</div>
+     	         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-0" style="height: 100px">
+     	         		<select class="form-control">
+					<option value="">Select Game</option>
+					<option value="BM">Badminton</option>
+					<option value="CR">Cricket</option>
+					<option value="BB">BasketBall</option>
+					<option value="CS">Chess</option>
+					<option value="FB">FootBall</option>
+					<option value="KK">Kho-Kho</option>
+					<option value="KB">Khabadi</option>
+				</select>
+       	        </div> 
+				 </div>
+      	     <div class="row" style="height: 100px">
+				<div class="col-lg-6 col-sm-6 col-xs-6" style="height: 100px">
+				<select class="form-control">
+     	         		<option value="PG">Penguin</option>
+     	         		<option value="ZL">Zeel</option>
+					 </select> 
+			
+					
+				</div> 
+     	     	<div class="col-lg-6 col-sm-6 col-xs-6" style="height: 100px">
+     	     		 <select class="form-control">
+     	         		<option value="">Select Team1</option>
+     	         		<option value="AD">Aditya</option>
+     	         		<option value="DP">Disha</option>
+     	         	</select>	
+    	      </div>
+     	     	<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-0 col-xm-0"></div>
+     	     		<div class="col-lg-5 col-md-5 col-sm-12 col-xm-12">
+     	     			<button type="button" style="width: 200px;">Apply</button>
+     	     		</div>
+     	     	</div>
+     	     	</div>
+      	     	
+      	     </div>
+       	     <!--Update-Result-->  
+       	     <div class="row">   
+            	 <div id="Update_Results">         
+        		 <h2>Results</h2>
+				 </div>
+      		    </div>
+    </div>
+			
+    <div id="Remove">
+   	     <!--Remove-->
+    	     <h1>Remove</h1>
+    		 <div id="Remove_Players">
+    		 <!--Remove-Player-->
+    			<h2>Remove Player</h2>
+    			<select class="form-control" id="player_list">
+    			<h3>Want to remove player:</h3>
+    				<option value="">Select Player to remove</option>
+    				<option value="Ad">Aditya Bohra(here come CollegeNAme)</option>
+    				<option value="dp">Disha Pandya</option>
+    			</select>
+    			
+    		 </div>
+    		 <!--Remove-Schedule-->
+    		<div id="Remove_schedule">
+    			<h2>Remove_Schedule</h2>
+    			<select class="form-control" name="Remove_sch_list">
+    				<option value="">Select the Match to be removed</option>
+    				<option value="M1">The Name of Match from database</option>
+    			</select>
+    		</div>
+    </div>
+  </div>
+
+
+	</div>
+	
+	</div>
+</body>
+</html>

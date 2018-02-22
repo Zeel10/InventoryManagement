@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body {
+      position: relative;
+  }*/
+  ul.nav-pills {
+      top: 80px;
+     
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+	 
+  }
+  #Approve { height:500px;padding-top: 40px; /*background-color: #1E88E5;*/}
+  #Add_section {height:500px;padding-top: 40px; /*background-color: #673ab7;*/}
+  #Update{;height: 1000px;padding-top: 40px; /*background-color: #ff9800;*/}
+  #Remove_Players {;height: 500px;padding-top: 40px; /*background-color: #00bcd4;*/}
+  #Remove_Schedule {;height: 500px;padding-top: 40px; /*background-color: #009688;*/}
+  
+  
+th
+{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font:bold;
+	
+}
+td
+{
+	height: 50px;
+}
+.input-group input[type="text"] {
+  padding: 10px;
+	
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+ .input-group input[type="text"]:focus,input[type="text"].focus{
+  border-bottom: solid 2px #969696;
+}

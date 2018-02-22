@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery</title>
+<script src=../jquery.js>
+</script>
+</head>
+<body>
+<h1>Adding jQuery</h1>
+<script>
+$(document).ready(function() {
+$("#submit").click function
+	var ma=$"mama".val();
+	});
+	$.post("test.jsp",{name:ma},function(data){
+		$(".result").html(data);
+	});
+</script>
+<div id ="box">
+	<input type="text" id="mama" name="mama"/>
+	<input type="submit" value="send" id="submit" name="submit"/>
+</div>
+<div id="result"></div>
+</body>
+</html>

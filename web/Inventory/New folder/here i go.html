@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	label
+{ position:absolute;
+  pointer-events:none;
+  top: 90px;
+  top:5px;
+	 transition:0.2s ease all;
+}
+
+.form-control:focus ~ label,.form-control:valid ~ label
+{
+	top:40px;
+	font-size: 24px;
+	color: aquamarine;
+}
+</style>
+</head>
+
+<body>
+<div >
+<input type="text" class="form-control" style="position: absolute; top: 100px;" >
+<label style="">Here i go</label>
+
+<input type="text" class="form-control" >
+<label>Come yr</label>
+	</div>
+</body>
+</html>

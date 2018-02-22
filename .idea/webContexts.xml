@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/web/Admin/Server_adduser.jsp" value="file://$PROJECT_DIR$/web/Admin" />
+        <entry key="file://$PROJECT_DIR$/web/Admin/User_list.jsp" value="file://$PROJECT_DIR$/web/Admin" />
+        <entry key="file://$PROJECT_DIR$/web/Admin/adminHomePage.jsp" value="file://$PROJECT_DIR$/web/Admin" />
+        <entry key="file://$PROJECT_DIR$/web/Inventory/Request_status.jsp" value="file://$PROJECT_DIR$/web/Inventory" />
+        <entry key="file://$PROJECT_DIR$/web/Provider/Add_new_items.jsp" value="file://$PROJECT_DIR$/web/Provider" />
+        <entry key="file://$PROJECT_DIR$/web/Provider/assignItems.jsp" value="file://$PROJECT_DIR$/web/Provider" />
+        <entry key="file://$PROJECT_DIR$/web/Provider/serverPurchase.jsp" value="file://$PROJECT_DIR$/web/Provider" />
+        <entry key="file://$PROJECT_DIR$/web/User/request.jsp" value="file://$PROJECT_DIR$/web/User" />
+        <entry key="file://$PROJECT_DIR$/web/User/requestServer.jsp" value="file://$PROJECT_DIR$/web/User" />
+        <entry key="file://$PROJECT_DIR$/web/User/tryingNew.jsp" value="file://$PROJECT_DIR$/web/User" />
+        <entry key="file://$PROJECT_DIR$/web/weber/Add_new_items.jsp" value="file://$PROJECT_DIR$/web/weber" />
+        <entry key="file://$PROJECT_DIR$/web/weber/RemoveUser.jsp" value="file://$PROJECT_DIR$/web/weber" />
+      </map>
+    </option>
+  </component>
+</project>
